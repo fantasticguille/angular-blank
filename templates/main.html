@@ -1,0 +1,5 @@
+<div>
+	<input type="text" ng-model="query">
+	<li ng-repeat="city in cities | filter:query">{{city.name}} - {{city.country}}</li>
+	<a href="#/add">Agregar Ciudad</a>
+</div>
